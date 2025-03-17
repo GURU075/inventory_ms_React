@@ -1,0 +1,17 @@
+
+.my-popup-content {
+    @apply w-9/12 m-auto p-[5px];
+    background: rgb(255, 255, 255);
+  }
+  .my-popup-arrow {
+    @apply text-white;
+  }
+  [role="tooltip"].my-popup-content {
+    @apply w-[400px] shadow-[rgba(0,0,0,0.16)_0px_0px_3px];
+  }
+  .my-popup-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  [data-popup="tooltip"].my-popup-overlay {
+    background: transparent;
+  }

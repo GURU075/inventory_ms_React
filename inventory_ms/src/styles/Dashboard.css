@@ -1,0 +1,29 @@
+/* global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Grid container for the filter form */
+.filter-grid {
+    @apply grid pl-4 pr-4 pb-6 gap-4 bg-gray-200;
+    @apply sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7;
+  }
+  
+  /* Input container styling */
+  .filter-item {
+    @apply w-full max-w-sm min-w-[150px] relative mt-4;
+  }
+  
+  /* Label styling */
+  .filter-label {
+    @apply flex mb-2 text-sm text-slate-600;
+  }
+  
+  /* Input field styling */
+  .filter-input {
+    @apply w-full bg-transparent placeholder:text-slate-400 text-slate-700;
+    @apply text-sm border border-slate-200 rounded-md pl-3 pr-10 py-2;
+    @apply transition duration-300 ease-in-out;
+    @apply focus:outline-none focus:border-slate-400 hover:border-slate-300;
+    @apply shadow-sm focus:shadow;
+  }
+  
